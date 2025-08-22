@@ -24,3 +24,39 @@ JDK = For writing + running programs.
 JRE = For running programs.
 JVM = The engine that executes Java bytecode.
 JIT = JVM’s helper that makes programs run faster.
+
+🔹 What is JIT in Java?
+JIT = Just-In-Time Compiler
+It is a part of JVM.
+Its job is to make Java programs run faster.
+
+🔹 How does JIT work in Java?
+When you run a Java program:
+The Java compiler (javac) converts your .java file into bytecode (.class file).
+JVM reads the bytecode and normally interprets it line by line. (This is slower.)
+
+Here comes JIT:
+JIT looks at the bytecode.
+If some methods or code blocks are used again and again, JIT compiles them into machine code (native code of your CPU).
+Now JVM doesn’t need to interpret that part every time → it runs directly as machine code → much faster.
+
+🔹 Example in Java
+public class JITExample {
+    public static void main(String[] args) {
+        for(int i=0; i<1000000; i++) {
+            printHello();
+        }
+    }
+    static void printHello() {
+        System.out.println("Hello JIT!");
+    }
+}
+
+
+The method printHello() is called many times.
+JVM notices this and tells JIT: “Hey, let’s compile printHello() to machine code.”
+Next time, it runs directly on the CPU instead of being interpreted → 🚀 faster execution.
+
+🔹 In short
+Without JIT: JVM translates bytecode line by line → slow.
+With JIT: Hot/Repeated code is translated once into machine code → reused → fast.
