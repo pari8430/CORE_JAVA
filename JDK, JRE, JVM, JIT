@@ -1,0 +1,26 @@
+1. JVM (Java Virtual Machine) : 
+Think of JVM as the engine that runs Java programs.
+It takes your .class file (bytecode) and executes it on your computer.
+It makes Java platform independent (same code runs on Windows, Linux, Mac).
+👉 Example: JVM is like a translator who reads Java's universal language (bytecode) and speaks in the local language of your computer (machine code).
+
+2. JRE (Java Runtime Environment) : 
+JRE = JVM + libraries + files needed to run Java programs.
+If you only want to run Java programs (not write them), you just need JRE.
+👉 Example: JRE is like a kitchen that has the cooking stove (JVM) + utensils + ingredients (libraries). You can cook (run programs) here.
+
+3. JDK (Java Development Kit) : 
+JDK = JRE + development tools (compiler javac, debugger, etc.).
+Needed if you want to write and develop Java programs.
+👉 Example: JDK is like a restaurant kitchen for chefs – it has everything from JRE (so you can cook) + extra tools to create new dishes (write programs).
+
+4. JIT (Just-In-Time Compiler) : 
+Part of JVM.
+It speeds up execution by converting frequently used bytecode into machine code at runtime (instead of interpreting line by line).
+👉 Example: If you keep translating the same sentence again and again, JIT says: "Wait, let me remember this in your language so I don’t have to translate it every time." 🚀
+
+✅ In short:
+JDK = For writing + running programs.
+JRE = For running programs.
+JVM = The engine that executes Java bytecode.
+JIT = JVM’s helper that makes programs run faster.
