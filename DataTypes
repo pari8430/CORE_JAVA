@@ -1,0 +1,26 @@
+🔹 1. Primitive Data Types
+These are the basic building blocks. There are 8 primitive types in Java:
+
+Data Type	Size	Default Value	Range
+byte	1 byte (8-bit)	0	-128 to 127
+short	2 bytes (16-bit)	0	-32,768 to 32,767
+int	4 bytes (32-bit)	0	-2,147,483,648 to 2,147,483,647
+long	8 bytes (64-bit)	0L	-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+float	4 bytes (32-bit)	0.0f	~7 decimal digits precision
+double	8 bytes (64-bit)	0.0d	~15 decimal digits precision
+char	2 bytes (16-bit, Unicode)	'\u0000'	0 to 65,535 (Unicode characters)
+boolean	1 bit (size depends on JVM)	false	true / false
+
+
+🔹 2. Non-Primitive (Reference/Object) Data Types
+These are objects that reference memory locations. They store addresses, not actual values.
+
+String (sequence of characters, e.g., "Hello")
+Arrays (collection of elements, e.g., int[] nums = {1,2,3};)
+Classes (user-defined types)
+Interfaces
+Enums
+
+Type	     Also Called	   Conversion	         Data Loss?	       Example
+Automatic	 Widening	       Smaller → Larger	   No	               int → double
+Manual	   Narrowing	     Larger → Smaller  	 Yes (possible)	   double → int
